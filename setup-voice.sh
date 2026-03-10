@@ -9,6 +9,9 @@ set -euo pipefail
 
 VOICE_DIR="$HOME/.openclaw/workspace/voice_interface"
 
+# Voice interface lives inside ~/.openclaw/workspace/ which is already
+# restored by migrate-import.sh. This script just rebuilds the venv.
+
 echo "=============================================="
 echo " Voice Interface Setup"
 echo " $(date)"
